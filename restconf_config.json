@@ -1,7 +1,6 @@
 {
   "Cisco-IOS-XE-native:native": {
     "hostname": "Router-RESTCONF",
-
     "interface": [
       {
         "GigabitEthernet": {
@@ -29,21 +28,6 @@
           }
         }
       }
-    ],
-
-    "router": {
-      "router-ospf": {
-        "ospf": {
-          "process-id": 1,
-          "network": [
-            {
-              "ip": "192.168.0.0",
-              "wildcard": "0.0.255.255",
-              "area": 0
-            }
-          ]
-        }
-      }
-    }
+    ]
   }
 }
