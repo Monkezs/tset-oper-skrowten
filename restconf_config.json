@@ -32,15 +32,17 @@
     ],
 
     "router": {
-      "ospf": {
-        "id": 1,
-        "network": [
-          {
-            "ip": "192.168.0.0",
-            "wildcard": "0.0.255.255",
-            "area": 0
-          }
-        ]
+      "router-ospf": {
+        "ospf": {
+          "process-id": 1,
+          "network": [
+            {
+              "ip": "192.168.0.0",
+              "wildcard": "0.0.255.255",
+              "area": 0
+            }
+          ]
+        }
       }
     }
   }
