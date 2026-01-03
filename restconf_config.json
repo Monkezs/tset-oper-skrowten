@@ -1,0 +1,49 @@
+{
+  "Cisco-IOS-XE-native:native": {
+    "hostname": "Router-RESTCONF",
+
+    "interface": [
+      {
+        "GigabitEthernet": {
+          "name": "1",
+          "ip": {
+            "address": {
+              "primary": {
+                "address": "192.168.237.128",
+                "mask": "255.255.255.0"
+              }
+            }
+          }
+        }
+      },
+      {
+        "Loopback": {
+          "name": "10",
+          "ip": {
+            "address": {
+              "primary": {
+                "address": "192.168.10.1",
+                "mask": "255.255.255.255"
+              }
+            }
+          }
+        }
+      }
+    ],
+
+    "router": {
+      "ospf": [
+        {
+          "id": 1,
+          "network": [
+            {
+              "ip": "192.168.0.0",
+              "wildcard": "0.0.255.255",
+              "area": 0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
